@@ -1,0 +1,58 @@
+{
+  "name": "react-redux-php",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-node build/dev-server.js",
+    "build": "rm -rf output && babel-node build/build.js"
+  },
+  "config": {
+    "ghooks": {
+      "pre-push": "fecs --reporter=baidu"
+    }
+  },
+  "author": "DuerFE",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.17.0",
+    "body-parser": "^1.15.2",
+    "cheerio": "^0.22.0",
+    "compression-webpack-plugin": "^0.3.1",
+    "css-loader": "^0.25.0",
+    "eslint-friendly-formatter": "^2.0.6",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "handlebars": "^4.0.5",
+    "html-webpack-plugin": "^2.22.0",
+    "http-proxy-middleware": "^0.17.2",
+    "json-loader": "^0.5.4",
+    "ora": "^0.3.0",
+    "postcss-loader": "^0.13.0",
+    "rider": "^2.0.0",
+    "shelljs": "^0.7.4",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.3.1",
+    "url-loader": "^0.5.7",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.12.2",
+    "webpack-merge": "^0.14.1"
+  }
+}
