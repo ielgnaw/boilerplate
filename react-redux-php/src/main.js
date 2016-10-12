@@ -31,10 +31,14 @@ class Main extends Component {
                 </ul>
                 <span className="ccc"></span>
                 <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" />
-                <div id="app-title">
+                <br/>
+                <p id="app-title">
                     <Counter />
                     <AjaxTest />
-                </div>
+                </p>
+                <br/>
+                <i className="icon-mute iconfont"></i>
+                <img src={require('./css/img/react-logo.png')} style={{height: '50px', width: '50px'}}/>
             </div>
         );
     }

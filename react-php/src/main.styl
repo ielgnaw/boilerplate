@@ -4,6 +4,9 @@
 
 initialize()
 
+@require './css/font/iconfont.css'
+@require './css/config'
+
 html,
 body
     min-height: 100%
@@ -11,18 +14,18 @@ body
 body
     -webkit-touch-callout: none
     -webkit-user-select: none
-    background: #f1f3f6
+    background: $test-color
 
 .aaa
     color: red
-    background: url('./img/react-logo.png')
+    background: url('./css/img/react-logo.png')
     background-size: contain
     background-repeat: no-repeat
     size(50px, 50px)
 
 .ccc
     display: block
-    background: url('./img/react-logo.png')
+    background: url('./css/img/react-logo.png')
     background-size: contain
     background-repeat: no-repeat
     size(50px, 50px)

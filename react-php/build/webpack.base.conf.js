@@ -69,7 +69,7 @@ export default {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 loader: 'url',
                 query: {
-                    limit: 100000,
+                    limit: 1000,
                     name: assetsPath('img/[name].[hash:7].[ext]')
                 }
             },
@@ -77,7 +77,7 @@ export default {
                 test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
                 loader: 'url',
                 query: {
-                    limit: 100000,
+                    limit: 1000,
                     name: assetsPath('fonts/[name].[hash:7].[ext]')
                 }
             }
