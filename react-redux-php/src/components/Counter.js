@@ -24,9 +24,9 @@ class Counter extends Component {
                 {' '}
                 <button onClick={() => incrementAsync(3000)}>3000s Increment async</button>
             </p>
-        )
+        );
     }
-};
+}
 
 Counter.propTypes = {
     increment: PropTypes.func.isRequired,
@@ -44,11 +44,11 @@ Counter.propTypes = {
  *
  * @return {Object} 对象
  */
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
     return {
         counter: state.counter
     };
-}
+};
 
 /**
  * 将 action 的所有方法绑定到 props 上
@@ -76,7 +76,7 @@ function mapDispatchToProps(dispatch) {
         },
         incrementAsync(delay = 1000) {
             dispatch(incrementAsync(delay));
-        },
+        }
     };
 }
 

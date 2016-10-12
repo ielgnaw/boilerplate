@@ -3,7 +3,7 @@
  * @author ielgnaw(wuji0223@gmail.com)
  */
 
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import * as ajaxTestAction from '../actions/ajaxTest';
 
@@ -53,9 +53,9 @@ class AjaxTest extends Component {
                 </p>
                 {ajaxRetView}
             </div>
-        )
+        );
     }
-};
+}
 
 /**
  * 将 state.counter 绑定到 props 的 counter
@@ -65,12 +65,12 @@ class AjaxTest extends Component {
  *
  * @return {Object} 对象
  */
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
     return {
         counter: state.counter,
         ajaxResult: state.ajaxTest
     };
-}
+};
 
 /**
  * 将 action 的所有方法绑定到 props 上
@@ -88,10 +88,10 @@ const mapStateToProps = (state) => {
 function mapDispatchToProps(dispatch) {
     return {
         sendGet(counter) {
-            dispatch(ajaxTestAction.sendGet({'counter': counter}));
+            dispatch(ajaxTestAction.sendGet({counter}));
         },
         sendPost(counter) {
-            dispatch(ajaxTestAction.sendPost({'counter': counter}));
+            dispatch(ajaxTestAction.sendPost({counter}));
         }
     };
 }

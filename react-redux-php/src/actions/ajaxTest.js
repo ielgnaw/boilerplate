@@ -16,7 +16,7 @@ export function returnAjaxRet(statusCode, method, ret) {
         type: 'RESULT',
         ajaxRet
     };
-};
+}
 
 /**
  * get
@@ -38,20 +38,22 @@ export function sendGet(ajaxArgs) {
             // data: [{name: 'foo', value: 'bar' }, { name: 'baz', value: 100}]
             data: ajaxArgs
         })
-        .then((resp) => {
+        .then(resp => {
             dispatch(returnAjaxRet(0, 'get', resp));
         })
         .fail((err, msg) => {
             dispatch(returnAjaxRet(1, 'get', err));
         })
-        .always((resp) => {
+        .always(resp => {
             console.log('get ajax done');
         });
-    }
-};
+    };
+}
 
 /**
  * post
+ *
+ * @param {Object} ajaxArgs 参数
  *
  * @return {Object} actionType
  */
@@ -63,14 +65,14 @@ export function sendPost(ajaxArgs) {
             method: 'post',
             data: ajaxArgs
         })
-        .then((resp) => {
+        .then(resp => {
             dispatch(returnAjaxRet(0, 'post', resp));
         })
         .fail((err, msg) => {
             dispatch(returnAjaxRet(1, 'post', err));
         })
-        .always((resp) => {
+        .always(resp => {
             console.log('post ajax done');
         });
-    }
-};
+    };
+}

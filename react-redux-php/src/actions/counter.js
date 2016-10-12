@@ -14,8 +14,8 @@ export const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
 export function increment() {
     return {
         type: INCREMENT_COUNTER
-    }
-};
+    };
+}
 
 /**
  * 减一
@@ -25,8 +25,8 @@ export function increment() {
 export function decrement() {
     return {
         type: DECREMENT_COUNTER
-    }
-};
+    };
+}
 
 /**
  * 奇数才加一的方法，该方法返回一个方法，包含dispatch和getState两个参数，dispatch用于执行action的方法，getState返回state
@@ -38,12 +38,12 @@ export function incrementIfOdd() {
         const {counter} = getState();
 
         if (counter % 2 === 0) {
-            return
+            return;
         }
 
         dispatch(increment());
     };
-};
+}
 
 
 /**
@@ -54,10 +54,10 @@ export function incrementIfOdd() {
  * @return {Object} 延迟执行的方法
  */
 export function incrementAsync(delay = 1000) {
-    return (dispatch) => {
+    return dispatch => {
         console.log('delay', delay);
         setTimeout(() => {
             dispatch(increment());
         }, delay);
     };
-};
+}
