@@ -1,3 +1,3 @@
-module.exports = {
-  NODE_ENV: '"production"'
-}
+export default {
+    'NODE_ENV': JSON.stringify('production')
+};

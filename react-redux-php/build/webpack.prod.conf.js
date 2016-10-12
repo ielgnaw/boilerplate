@@ -39,7 +39,6 @@ const entryTplList = [];
         else {
             const extname = path.extname(item);
             if (extname === '.tpl' || extname === '.html') {
-                console.log(path.basename(item), extname);
                 entryTplList.push({
                     chunksName: path.basename(item).replace(extname, ''),
                     filename: path.relative('.', filePath + '/' + item)

@@ -1,10 +1,11 @@
 {
   "name": "react-redux-php",
   "version": "0.0.1",
-  "description": "",
+  "description": "This project boilerplate for React & Redux, use Smarty rendering template.",
   "main": "index.js",
   "scripts": {
     "dev": "babel-node build/dev-server.js",
+    "lint": "fecs --reporter=baidu",
     "build": "rm -rf output && babel-node build/build.js"
   },
   "config": {
@@ -12,7 +13,7 @@
       "pre-push": "fecs --reporter=baidu"
     }
   },
-  "author": "DuerFE",
+  "author": "ielgnaw",
   "license": "ISC",
   "dependencies": {
     "react": "^15.3.2",
@@ -36,6 +37,7 @@
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "fecs": "^1.0.0",
     "file-loader": "^0.9.0",
     "handlebars": "^4.0.5",
     "html-webpack-plugin": "^2.22.0",

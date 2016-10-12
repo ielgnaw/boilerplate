@@ -16,7 +16,7 @@
             var data = {%json_encode($data)%};
             console.warn(data, 'tpl');
         </script>
-        <script src="/main.js" replace="1"></script>
+        <script src="/example.js" replace="1"></script>
     </body>
 </html>
 

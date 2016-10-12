@@ -1,4 +1,9 @@
-import React, {Component} from 'react';
+/**
+ * @file 入口
+ * @author ielgnaw(wuji0223@gmail.com)
+ */
+
+import React from 'react';
 import {render} from 'react-dom';
 
 require('./main.styl');
