@@ -86,7 +86,7 @@ export default class AjaxButton extends React.Component {
                     请求结果 {ajaxRet.status === 0 ? '成功' : '失败'}<br/>
                     提交的参数为
                     <span style={{color: 'red'}}>
-                        {ajaxRet.data.data[(ajaxRet.method === 'get' ? 'get' : 'post') + 'Args'].counter}
+                        {ajaxRet.data.data[(ajaxRet.method === 'get' ? 'get' : 'post') + 'Args'].num}
                     </span>
                     <br/>
                     返回数据为 {JSON.stringify(ajaxRet)}
