@@ -1,6 +1,6 @@
 /**
  * @file mock route handler for dev
- * @author ielgnaw(wuji0223@gmail.com)
+ * @author ielgnaw <wuji0223@gmail.com>
  */
 
 import fs from 'fs';
@@ -8,9 +8,6 @@ import path from 'path';
 // import queryString from 'querystring';
 
 export default function mockRouteMiddleWare(req, res, next) {
-    // /saiya/userinfo/homeDetail?a=1&b=2
-    //  => ["", "saiya", "userinfo", "homeDetail"]
-    //  => [saiya", "userinfo", "homeDetail"]
     let segments = req.path.split('/');
     segments = segments.splice(1, segments.length);
 
@@ -19,7 +16,7 @@ export default function mockRouteMiddleWare(req, res, next) {
         if (!fs.existsSync(mockRouteFilePath)) {
             return next();
         }
-        // var query = queryString.parse(require('url').parse(req.url).query);
+
         let query = require('url').parse(req.url).query;
         query = query ? '?' + query : '';
 
