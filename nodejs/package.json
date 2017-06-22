@@ -1,7 +1,7 @@
 {
   "name": "nodejs",
   "version": "0.0.1",
-  "description": "nodejs",
+  "description": "This is boilerplate for NPM Package Project.",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
