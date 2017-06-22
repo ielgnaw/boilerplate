@@ -11,12 +11,12 @@ $data = array(
     "end" => 0,
     "plan_list" => array(
         array(
-            "id" => 1,
-            "name" => "哑铃进阶循环训练1",
-            "total_users" => 5678821,
-            "banner_path" => "http://boscdn.bpc.baidu.com/mms-res/ielgnaw/1111.png",
-            "join" => 1,
-            "detail"=> 0
+            "id" => 1, //计划id
+            "name" => "哑铃进阶循环训练1",   //计划名称
+            "total_users" => 5678821,  //多少人已加入
+            "banner_path" => "http://boscdn.bpc.baidu.com/mms-res/ielgnaw/1111.png",   //banner图片的url地址
+            "join" => 1,     //0:未加入，1：已加入
+            "detail"=> 0 ,// 是否有计划详情页，1有，0无
         )
     )
 );
