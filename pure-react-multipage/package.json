@@ -1,7 +1,7 @@
 {
   "name": "pure-react-multipage",
   "version": "0.0.1",
-  "description": "pure-react-multipage",
+  "description": "This is boilerplate for React project, Multiple page, Pure FE Project.",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development babel-node build/dev-server.js",
