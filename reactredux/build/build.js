@@ -3,19 +3,19 @@
  * @author ielgnaw <wuji0223@gmail.com>
  */
 
-/* globals rm, mkdir */
 import 'shelljs/global';
+
 import path from 'path';
 import ora from 'ora';
 import webpack from 'webpack';
 import config from '../config';
 import webpackConfig from './webpack.prod.conf';
 
-console.log(''
-    + '  Tip:\n'
-    + '  Built files are meant to be served over an HTTP server.\n'
-    + '  Opening index.html over file:// won\'t work.\n'
-);
+console.log(
+    '  Tip:\n' +
+    '  Built files are meant to be served over an HTTP server.\n' +
+    '  Opening index.html over file:// won\'t work.\n'
+)
 
 const spinner = ora('building for production...');
 spinner.start();
@@ -26,7 +26,7 @@ rm('-rf', assetsPath);
 mkdir('-p', assetsPath);
 
 webpack(webpackConfig, (err, stats) => {
-    spinner.stop();
+    spinner.stop()
     if (err) {
         throw err;
     }

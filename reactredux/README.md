@@ -1,4 +1,4 @@
-pure-react-redux
+reactredux
 ===
 
 ## Build Setup
