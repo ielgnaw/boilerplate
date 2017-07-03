@@ -1,4 +1,4 @@
-react-php
+reactphp
 ===
 
 ## Build Setup

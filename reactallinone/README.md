@@ -1,4 +1,4 @@
-react-redux-php
+reactallinone
 ===
 
 ## Build Setup

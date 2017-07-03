@@ -1,4 +1,4 @@
-pure-react
+reactreduxphp
 ===
 
 ## Build Setup

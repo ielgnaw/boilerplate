@@ -1,7 +1,7 @@
 {
   "name": "reactredux",
   "version": "0.0.1",
-  "description": "reactredux",
+  "description": "This is boilerplate for React & Redux project, Pure FE Project.",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development babel-node build/dev-server.js",
