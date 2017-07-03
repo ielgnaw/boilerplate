@@ -1,4 +1,4 @@
-pure-react-multipage
+react-multipage
 ===
 
 ## Build Setup
